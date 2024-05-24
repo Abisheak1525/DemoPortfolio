@@ -1,25 +1,29 @@
-body {
+.body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
+    color: #f4f4f4;
     background-color: #333;
+}
+/* ----------------Header------------------- */
+.header {
+    background-color: #444;
     color: #fff;
     padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the header stays on top of other content */
 }
 
-header .container {
+.header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
 }
 
-header h1 {
+.header h1 {
     margin: 0;
 }
 
@@ -38,9 +42,19 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
 }
+#a1{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* -------------Common------------------ */
+.section1 {
+    padding: 60px 20px;
+    margin-top: 56px;
+}
 
 .section {
-    padding: 40px 0;
+    padding: 60px 20px;
 }
 
 .container {
@@ -49,46 +63,269 @@ nav ul li a {
     padding: 0 20px;
 }
 
+.button1 {
+    background-color:  #333;
+    border: 1px solid  #333; /* Add border for button visibility */
+    padding: 10px 20px; /* Add padding for button size */
+    text-decoration: none; /* Remove default link underline */
+    display: inline-block; /* Ensure button behaves like an inline element */
+    color: #f6aa5d;
+    border-radius: 5px;
+    border-color: black;
+}
+
+.button1:hover {
+    background-color: #f6aa5d; /* Transparent white color on hover */
+    color: black;
+}
+
 h2 {
     margin-top: 0;
     font-size: 2em;
 }
+/* ---------------Welcome Continer---------------- */
 
-.project {
-    background-color: #fff;
-    margin: 20px 0;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin-top: 10px;
-}
-
-form input, form textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-form button {
-    margin-top: 10px;
-    padding: 10px;
-    border: none;
-    background-color: #333;
+#welcome {
+    background: url('images/background3.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
     color: #fff;
-    border-radius: 4px;
-    cursor: pointer;
+    text-align: center;
+}
+/* About section with background image */
+
+#welcome .container {
+    /* background: rgba(0, 0, 0, 0.5);  */
+    padding: 40px;
+    border-radius: 8px;
 }
 
-footer {
+.mycont {
+    max-width: 0px;
+    display: flex;
+    padding: 0 0px;
+
+}
+.hel{
+    width: 200px;
+    font-size: 25px;
+}
+#name{
+    font-size: 50px;
+}
+
+.mycont .div {
+    width:50%;
+}
+.div{
+    height: 250px;
+}
+
+
+
+/* ------------Skills continer--------- */
+
+#skills{
+    background-color: #222;
+    color: white;
+}
+.skill {
+    background-color: #333;
+    border-radius: 5px;
+    /* margin-bottom: 20px; Adds vertical gap between the skill containers */
+    width: 300px;
+    height: 200px;
+    margin: 40px;
+    text-align: center;
+    
+}
+.skill:hover{
+    background-color: #444;
+}
+.skills-continer{
+    display: flex;
+}
+
+.skhead{
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.skitem{
+    margin: 10px;
+}
+.icon{
+    width: 70px; /* Adjust size as needed */
+    height: auto;
+    display: flex;
+    margin-left: 115px;
+    margin-top: 30px;
+}
+.sk2{
+    display: flex;
+    align-items: center; /* Aligns items vertically centered */
+    padding: 20px;
+}
+
+.skleft, .skright{
+    flex: 1; /* Adjusts flex property as needed */
+    padding: 10px;
+    margin: 10px; /* Adds margin between the divs */
+}
+
+
+#skills {
+    background-color: #222;
+    color: white;
+    padding: 20px 0; /* Adds padding to the skills section */
+}
+
+.skill2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    width: 100px; /* Adjust the width to fit your layout */
+    text-align: left;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    height: 10px; /* Adjust the height of the progress bar */
+    background-color: #e0e0e0;
+    margin: 0 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #666;
+}
+
+.percentage {
+    width: 50px; /* Adjust the width to fit your layout */
+    text-align: right;
+}
+/* ----------About Continer------------ */
+.abt {
+    display: flex;
+    justify-content: space-between; /* Adjusts spacing between items */
+    align-items: center; /* Aligns items vertically centered */
+    padding: 20px;
+}
+
+.img, .dis {
+    flex: 1; /* Adjusts flex property as needed */
+    padding: 10px;
+    margin: 10px; /* Adds margin between the divs */
+}
+
+.img {
+    background-color: #333; /* Optional: Adds background color for visibility */
+    background-image: url('images/person.png');
+    background-size: contain; /* Ensures the image fits within the div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image within the div */
+    height: 340px;
+    width: 200px;
+    display: flex; /* Adds flex to center content within */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+}
+
+.dis {
+    background-color: #333; /* Optional: Adds background color for visibility */
+    height: 340px;
+    width: 200px;
+
+}
+
+.dis {
+    background-color: #333; /* Optional: Adds background color for visibility */
+    color: white;
+}
+
+#about{
+    height: 100%;
+}
+/* -----------------------Project-------------------------- */
+#projects{
+    background-color: #111;
+}
+.project {
+    color: #fff;
+    background-color: #111;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* -----------------------Contant Info--------------------------- */
+
+#contact
+{
+    background: url('images/background3.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+}
+.row1{
+    background:transparent;
+    display: flex;
+    padding: 20px;
+}
+.row2{
+    background:transparent;
+    display: flex;
+    padding: 20px;
+    
+}
+.row3{
+    background-color: #333;
+    display: flex;
+}
+
+.gh, .ig{
+    flex: 1; /* Adjusts flex property as needed */
+    padding: 10px;
+    margin: 10px; 
+}
+.ln,.cn{
+    flex: 1; /* Adjusts flex property as needed */
+    padding: 10px;
+    margin: 10px; 
+}
+.lc,.hr{
+    flex: 1; /* Adjusts flex property as needed */
+    padding: 10px;
+    margin: 10px; 
+}
+
+.gh,.ig,.cn,.hr,.lc,.ln{
+    text-align: center;
+}
+
+.button {
+    background-color: #24292e; 
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #6e7681;
+}
+
+
+/* ---------------------Footer----------------------- */
+.footer {
     background-color: #333;
     color: #fff;
     text-align: center;

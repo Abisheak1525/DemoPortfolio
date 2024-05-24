@@ -6,66 +6,208 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
+
+<body class="body">
+    <header class="header">
         <div class="container">
-            <h1>My Portfolio</h1>
-            <nav>
+            <h1><a href="#welcome" id="a1">wel<span style="color: #f6aa5d;">come</span></a></h1>
+            <nav class="nav">
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about"  style="color: #f6aa5d;">About</a></li>
+                    <li><a href="#skills"  style="color: #f6aa5d;">Skills</a></li>
+                    <li><a href="#projects" style="color: #f6aa5d;">Projects</a></li>
+                    <li><a href="#contact" style="color: #f6aa5d;">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="about" class="section">
+    <section id="welcome" class="section1">
         <div class="container">
-            <h2>About Me</h2>
-            <p>Hello! I'm a web developer with a passion for creating beautiful and functional websites. Welcome to my portfolio!</p>
+            <div>
+                <h2>Welcome</h2>
+                <h3>Welcome to my portfolio!<spam style="color: #f6aa5d;"> I'm excited to share my projects and experiences with you.</spam></h3>
+            </div>
+            <div class ="mycont">
+                <div class="div">
+                    <div class="hel">
+                        Hello,<spam style="color: #f6aa5d;"> I'm<spam>
+                    </div>
+                    <br>
+                    <div class="hel" id ="name">
+                        Abisheak 
+                    </div>
+                    <br>
+                    <div class="hel">
+                        <a href="#contact" class="button1">Contact</a>
+                    </div>
+                </div>
+            </div>
         </div>
+        
     </section>
 
+    <section id="about" class="section" style="background-color: #333">
+        <div class="container">
+            <h2 style="margin-left: 530px;"> About Me</h2>
+        </div>
+
+        <div class="abt">
+            <div class="img" ></div>
+            <div class="dis">
+                <b style="font-size: xx-large;">I am Abisheak S </b><span style="color: #f6aa5d;">and i am a college student</span>
+                <br><br><br>
+                <span>
+                    I am a dedicated college student and an effective programmer, known for my strong work ethic and commitment to excellence in all my projects
+                </span>
+                <br><br><br>
+                <span style="color: black;"><b>Fun Fact:</b> </span>
+                <br>
+                <i><span style="color: #f6aa5d;">" Marriage is like going to a restaurant. You order what you want, then when you see what the other person has, you wish you had ordered that."</span></i>
+                <br><br><br><br>
+                <div class="hel">
+                    <a href="#skills" class="button1">My Skills</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 style="margin-left: 530px; font-size: xx-large;"><b>My <span style="color: #f6aa5d;">Skills</span></b></h2>
+            <p style="margin-left: 200px;"><span style="color: #f6aa5d;"> Hello! I'm a web developer with a passion for creating</span> beautiful and functional websites. Welcome to my portfolio!</p>
+            <div class="skills-continer"> 
+                <div class="skill" id="wd">
+                    <img src="images/icon1.png" class="icon">
+                    <div class="skhead" >Web <span style="color: #f6aa5d;">Developer</span></div>
+                    <div class="skitem">HTML, CSS & Javascript</div>
+                </div>
+                <div class="skill" id="fs">
+                    <img src="images/icon2.png" class="icon">
+                    <div class="skhead">App <span style="color: #f6aa5d;">Development</span></div>
+                    <div class="skitem">Java, C, C++, Javascript, reactJS</div>
+                </div>
+                <div class="skill" id="ps">
+                    <img src="images/icon3.png" class="icon">   
+                    <div class="skhead">Problem<span style="color: #f6aa5d;"> Solving</span></div> 
+                    <div class="skitem">Java , C, C++, Javascript</div>
+                </div>
+            </div>
+        </div>
+        <!-- sent skill set -->
+        <div class="sk2">
+            <div class="skleft">
+                <h1>My creative skills & experiences.</h1>
+                <h3>What I know</h3>
+                <div class="hel">
+                    <a href="#projects" class="button1">My projects</a>
+                </div>
+            </div>
+            <div class="skright">
+                <div class="skill2">
+                    <div class="skill-name">HTML</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                    <div class="percentage">80%</div>
+                </div>
+                <div class="skill2">
+                    <div class="skill-name">CSS</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%;"></div>
+                    </div>
+                    <div class="percentage">60%</div>
+                </div>
+                <div class="skill2">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                    <div class="percentage">50%</div>
+                </div>
+                <div class="skill2">
+                    <div class="skill-name">React</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%;"></div>
+                    </div>
+                    <div class="percentage">60%</div>
+                </div>
+                <div class="skill2">
+                    <div class="skill-name">Python</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                    <div class="percentage">50%</div>
+                </div>
+            </div>
+            
+        </div>
+       
+    </section>
+    
     <section id="projects" class="section">
         <div class="container">
-            <h2>Projects</h2>
+            <h2 style="margin-left: 500px; font-size: xx-large;"><b>My <span style="color: #f6aa5d;">Projects</span></b></h2>
             <div class="project">
-                <h3>Project 1: E-commerce Website</h3>
-                <p>A fully functional e-commerce website with user authentication, product management, and a shopping cart.</p>
-            </div>
-            <div class="project">
-                <h3>Project 2: Food ordering</h3>
-                <p>A responsive food ordering application that allows users to browse menus, place orders, and track delivery status.</p>
-            </div>
-            <div class="project">
-                <h3>Project 3: Task Management App</h3>
-                <p>A task management application with features like task creation, editing, deletion, and progress tracking.</p>
+                <div class="d1">
+                    <h3>Project : Flight Ticket Booking</h3>
+                    <p>
+                        An online flight ticket booking system that allows users to search for flights, book tickets, and manage bookings with ease.
+                        This system provides a seamless experience for users looking to book flights, offering a user-friendly interface and comprehensive management tools.
+                        Features include: Booking confirmation and e-ticket generation,Secure online payment integration,User authentication and profile management, and Real-time flight search with filters for price, duration, and airlines.
+                    </p>
+                </div>
+                <div class="d2">
+                    <h1 style="color: #f6aa5d;">To See My creative skills & experiences.</h1>
+                    <h3>Project Link</h3>
+                    <div class="hel">
+                        <a href="https://github.com/Abisheak1525/AstroReact" class="button1">Git Hub Link</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="contact" class="section">
         <div class="container">
-            <h2>Contact</h2>
-            <form id="contact-form">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
+            <h2><span style="color: #f6aa5d;">Contact </span>me</h2>
+            <div class="row1">
+                <div class="gh">
+                    <a href="https://github.com/Abisheak1525" class="button" target="_blank">Git Hub</a>
+                    <!-- <h1>Git Hub</h1> -->
+                </div>
+                <div class="ig">
+                    <a href="https://www.instagram.com/im_abisheak_/" class="button" target="_blank">Instagram</a>
+                    <!-- <h1>Instagram</h1> -->
+                </div>
+                <div class="hr">
+                    <a href="https://www.hackerrank.com/profile/abisheaksakthiv1" class="button" target="_blank">HackerRank</a>
+                    <!-- <h1>Hacker Rank</h1> -->
+                </div>
+            </div>
+            <div class="row2">
+                <div class="ln">
+                    <a href="https://www.linkedin.com/in/abisheak-sakthivel-murugan-270731258/" class="button" target="_blank">Linked In</a>
+                    <!-- <h1>Linked IN</h1> -->
+                </div>
+                <div class="cn">
+                    <a href="https://www.naukri.com/code360/profile/Abisheak" class="button" target="_blank">Code Ninjas</a>
+                    <!-- <h1>Code Ninjas</h1> -->
+                </div>
+                <div class="lc">
+                    <a href="https://leetcode.com/u/Abi_01/" class="button" target="_blank">Leet Code</a>
+                    <!-- <h1>Leet Code</h1> -->
+                </div>
+            </div>
+            
         </div>
+
     </section>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
             <p>&copy; 2024 My Portfolio</p>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
